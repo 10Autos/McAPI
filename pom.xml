@@ -6,7 +6,9 @@
 
     <groupId>net.ckranz.mc</groupId>
     <artifactId>McAPI</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
+    <name>McAPI</name>
+    <description>An API that helps creating Minecraft plugins</description>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
@@ -14,4 +16,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.19-R0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>
