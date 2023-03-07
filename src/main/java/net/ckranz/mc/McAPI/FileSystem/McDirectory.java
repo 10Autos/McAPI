@@ -29,7 +29,7 @@ public class McDirectory {
     }
 
     public static McDirectory create(String name, McDirectory parent) {
-        return create(parent.getPath() + "/" + name);
+        return create(parent.file.getAbsolutePath() + "/" + name);
     }
 
 
@@ -38,7 +38,7 @@ public class McDirectory {
     }
 
     public String getPath() {
-        return file.getPath();
+        return file.getAbsolutePath();
     }
 
     public McDirectory getParent() {
@@ -64,9 +64,9 @@ public class McDirectory {
     public HashMap<String, McFile> getChildFiles() {
         HashMap<String, McFile> childFiles = new HashMap<>();
         for(String name : file.list()) {
-            File tempFile = new File(name);
+            File tempFile = new File(file.getAbsolutePath() + "/" + name);
             if(tempFile.isFile()) {
-                childFiles.put(name, McFile.create(tempFile.getPath()));
+                childFiles.put(name, McFile.create(tempFile.getAbsolutePath()));
             }
         }
         return childFiles;
@@ -75,9 +75,9 @@ public class McDirectory {
     public HashMap<String, McDirectory> getChildDirectories() {
         HashMap<String, McDirectory> childDirectories = new HashMap<>();
         for(String name : file.list()) {
-            File tempFile = new File(name);
+            File tempFile = new File(file.getAbsolutePath() + "/" + name);
             if(tempFile.isDirectory()) {
-                childDirectories.put(name, create(tempFile.getPath()));
+                childDirectories.put(name, create(tempFile.getAbsolutePath()));
             }
         }
         return childDirectories;

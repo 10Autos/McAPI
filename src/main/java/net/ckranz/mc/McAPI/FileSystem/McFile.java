@@ -42,7 +42,7 @@ public class McFile {
     }
 
     public static McFile create(String name, McDirectory parent) {
-        return create(parent.getPath() + "/" + name);
+        return create(parent.getFile().getAbsolutePath() + "/" + name);
     }
 
 
@@ -51,7 +51,7 @@ public class McFile {
     }
 
     public String getPath() {
-        return file.getPath();
+        return file.getAbsolutePath();
     }
 
     public McDirectory getParent() {
