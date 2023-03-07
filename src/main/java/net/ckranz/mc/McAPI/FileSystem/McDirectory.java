@@ -103,4 +103,9 @@ public class McDirectory {
     public static McDirectory getPluginDirectory(Plugin plugin) {
         return create(plugin.getDataFolder().getAbsolutePath());
     }
+
+
+    public String toString() {
+        return getName();
+    }
 }

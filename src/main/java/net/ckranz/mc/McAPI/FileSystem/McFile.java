@@ -106,4 +106,9 @@ public class McFile {
             throw new RuntimeException(e);
         }
     }
+
+
+    public String toString() {
+        return getName();
+    }
 }
