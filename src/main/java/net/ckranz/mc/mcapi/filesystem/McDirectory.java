@@ -1,4 +1,4 @@
-package net.ckranz.mc.McAPI.FileSystem;
+package net.ckranz.mc.mcapi.filesystem;
 
 import org.bukkit.plugin.Plugin;
 

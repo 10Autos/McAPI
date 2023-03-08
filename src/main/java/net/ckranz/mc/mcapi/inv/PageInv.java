@@ -1,6 +1,6 @@
-package net.ckranz.mc.McAPI.inv;
+package net.ckranz.mc.mcapi.inv;
 
-import net.ckranz.mc.McAPI.inv.listeners.ItemClickEvent;
+import net.ckranz.mc.mcapi.inv.listeners.ItemClickEvent;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryClickEvent;

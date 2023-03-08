@@ -1,11 +1,11 @@
-package net.ckranz.mc.McAPI.inv;
+package net.ckranz.mc.mcapi.inv;
 
 import java.util.ArrayList;
 
-import net.ckranz.mc.McAPI.inv.listeners.InvCloseEvent;
-import net.ckranz.mc.McAPI.inv.listeners.InvOpenEvent;
-import net.ckranz.mc.McAPI.inv.listeners.ItemClickEvent;
-import net.ckranz.mc.McAPI.inv.listeners.ItemDragEvent;
+import net.ckranz.mc.mcapi.inv.listeners.InvCloseEvent;
+import net.ckranz.mc.mcapi.inv.listeners.InvOpenEvent;
+import net.ckranz.mc.mcapi.inv.listeners.ItemClickEvent;
+import net.ckranz.mc.mcapi.inv.listeners.ItemDragEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.entity.Player;

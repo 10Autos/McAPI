@@ -1,4 +1,4 @@
-package net.ckranz.mc.McAPI.inv.listeners;
+package net.ckranz.mc.mcapi.inv.listeners;
 
 import org.bukkit.event.inventory.InventoryOpenEvent;
 
