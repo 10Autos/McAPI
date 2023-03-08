@@ -17,15 +17,15 @@ import org.bukkit.event.inventory.InventoryDragEvent;
 import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.Plugin;
 
 public class ChestInv {
     private final Inventory inv;
     private final String title;
-    private final JavaPlugin plugin;
+    private final Plugin plugin;
     private final ArrayList<HumanEntity> players = new ArrayList<>();
 
-    public ChestInv(String title, int lines, JavaPlugin plugin) {
+    public ChestInv(String title, int lines, Plugin plugin) {
         inv = Bukkit.createInventory(null, lines * 9, title);
         this.title = title;
         this.plugin = plugin;
